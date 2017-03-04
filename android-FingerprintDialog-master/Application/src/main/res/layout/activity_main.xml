@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.93"
+            android:background="@drawable/card"
+            android:elevation="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_title"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="#70005D" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_price"
+                android:textAppearance="@android:style/TextAppearance.Material.Body2"
+                android:textColor="#A1004E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/item_description"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:textColor="#A1004E" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/purchase_button"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="4dp"
+            android:background="#70005D"
+            android:text="@string/purchase"
+            android:textColor="#DE007A" />
+
+        <Button
+            android:id="@+id/purchase_button_2"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="4dp"
+            android:background="#70005D"
+            android:text="@string/purchase_2"
+            android:textColor="#DE007A" />
+
+        <Button style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="576dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="@string/purchase_not_invalidated"
+            android:background="#ffffff"
+            android:id="@+id/purchase_button_not_invalidated" />
+
+        <TextView
+            android:id="@+id/purchase_button_not_invalidated_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:gravity="end"
+            android:textAlignment="gravity"
+            android:text="@string/purchase_button_not_invalidated_description"
+            />
+
+        <TextView
+                android:id="@+id/confirmation_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textAppearance="@android:style/TextAppearance.Material.Body2"
+                android:textColor="#DE007A"
+                android:text="@string/purchase_done"
+                android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/confirmation_message_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textColor="#DDA1"
+            android:text="@string/purchase_done"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/test_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textColor="#DE007A"
+            android:text="@string/test_message"
+            android:visibility="gone"/>
+
+        <TextView
+                android:id="@+id/encrypted_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textAppearance="@android:style/TextAppearance.Material.Body2"
+                android:textColor="?android:attr/colorAccent"
+                android:text="@string/testing_done"
+                android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

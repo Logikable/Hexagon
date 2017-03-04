@@ -1,0 +1,4 @@
+#Sat Mar 04 11:07:18 PST 2017
+base.0=C\:\\Users\\Jason\\Desktop\\android-FingerprintDialog-master\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Jason\\Desktop\\android-FingerprintDialog-master\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
