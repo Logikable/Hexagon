@@ -8,7 +8,7 @@
 * ngrok server
 * PHP 5+
 * JDK 1.8
-* Twilio console with credit
+* Twilio console
 
 #### Usage
 
