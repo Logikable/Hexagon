@@ -16,7 +16,7 @@
 		private static String ACCOUNT_SID = "ACa520c27feb8d014ad7c0645989152fc7";
 		private static String AUTH_TOKEN = "acd6380c8687a036873255f3aa66d42e";
 		private static String APP_ID = "AP7adefab30e2165ca3a7764d977658a8c";
-		private static String HARDWARE_URL = "https://ca53006a.ngrok.io";
+		private static String HARDWARE_URL = "https://788befff.ngrok.io";
 		private static String FROM_NUMBER = "+16262262433";
 		private static String TO_NUMBER = "+15106849508";
 		private static String EMERGENCY = "+15106314655";
@@ -77,9 +77,7 @@
 					bool match3 = (score3 > 0);
 
 					//Console.WriteLine(match);
-					Console.WriteLine(match1);
-					Console.WriteLine(match2);
-					Console.WriteLine(match3);
+					Console.WriteLine("Awaiting...");
 
 					System.Diagnostics.Process p = new Process();
 					p.StartInfo.FileName = "java";
@@ -97,22 +95,21 @@
 					}
 					else if (match3)
 					{
-						p.StartInfo.Arguments = @" -jar " + DIR + "\\TwilioTest.jar msg " + param;
-						p.Start();
-
-					//	ProcessStartInfo pythonInfo = new ProcessStartInfo("python");
-					//	pythonInfo.UseShellExecute = false;
-					//	pythonInfo.RedirectStandardOutput = true;
+						ProcessStartInfo pythonInfo = new ProcessStartInfo("python");
+						pythonInfo.UseShellExecute = false;
+						pythonInfo.RedirectStandardOutput = true;
 					//	pythonInfo.Arguments = DIR + "\\gui.py " + DIR;
-					//	pythonInfo.Arguments = DIR + "\\geolocator.py";
-					//	Process py = new Process();
-					//	py.StartInfo = pythonInfo;
-					//	py.Start();
-					//	StreamReader sr = py.StandardOutput;
-					//	Console.WriteLine(sr.ReadLine());
-					//	py.WaitForExit();
-					//	py.Close();
+						pythonInfo.Arguments = DIR + "\\geolocator.py";
+						Process py = new Process();
+						py.StartInfo = pythonInfo;
+						py.Start();
+						StreamReader sr = py.StandardOutput;
+						string output = sr.ReadLine();
+						py.WaitForExit();
+						py.Close();
 
+						p.StartInfo.Arguments = @" -jar " + DIR + "\\TwilioTest.jar msg " + param + " " + output;
+						p.Start();
 						Console.WriteLine("msg");
 					}
 
