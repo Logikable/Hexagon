@@ -1,3 +1,3 @@
 import geocoder
-g = geocoder.google('Mountain View, CA')
+g = geocoder.ip('me')
 print(g.latlng)
