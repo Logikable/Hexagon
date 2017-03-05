@@ -17,7 +17,7 @@
 	    private static String AUTH_TOKEN = "acd6380c8687a036873255f3aa66d42e";
 	    private static String APP_ID = "AP7adefab30e2165ca3a7764d977658a8c";
 	    private static String STATUS_DIR = "C:\\Users\\Sean\\Downloads\\Twilio\\StealthApp";
-	    private static String HARDWARE_URL = "http://d426b791.ngrok.io";
+	    private static String HARDWARE_URL = "https://f8225611.ngrok.io";
 	    private static String FROM_NUMBER = "+16262262433";
 		private static String TO_NUMBER = "+15106849508";
 		private static String EMERGENCY = "+15106314655";

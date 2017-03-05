@@ -1,0 +1,13 @@
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\StealthApp.exe
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\StealthApp.pdb
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\mscorlib.dll
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\SourceAFIS.dll
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\SourceAFIS.xml
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\normidna.nlp
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\normnfc.nlp
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\normnfd.nlp
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\normnfkc.nlp
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\bin\Debug\normnfkd.nlp
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\obj\x86\Debug\StealthApp.csprojResolveAssemblyReference.cache
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\obj\x86\Debug\StealthApp.exe
+C:\Users\Sean\Downloads\Twilio\StealthApp\StealthApp\obj\x86\Debug\StealthApp.pdb

@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{0C339822-1DB9-4094-AD44-935C21EF1504}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="StealthApp\Program.cs">
+    <Files>
+      <File FileName="StealthApp\Program.cs" Line="13" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.StealthApp PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
