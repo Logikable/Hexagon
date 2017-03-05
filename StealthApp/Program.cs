@@ -10,14 +10,13 @@
 
 	class MainClass
 	{
-		private static String DIR = "C:\\Users\\sean\\Downloads\\Twilio\\StealthApp\\Database\\";
-		private static String JAVA_DIR = "C:\\Users\\Sean\\Downloads\\Twilio\\StealthApp\\";
+		private static String DIR = "C:\\Users\\sean\\Downloads\\Twilio\\StealthApp";
+		private static String DATABASE_DIR = DIR + "\\Database\\";
 
 		private static String ACCOUNT_SID = "ACa520c27feb8d014ad7c0645989152fc7";
 		private static String AUTH_TOKEN = "acd6380c8687a036873255f3aa66d42e";
 		private static String APP_ID = "AP7adefab30e2165ca3a7764d977658a8c";
-		private static String STATUS_DIR = "C:\\Users\\Sean\\Downloads\\Twilio\\StealthApp";
-		private static String HARDWARE_URL = "https://f8225611.ngrok.io";
+		private static String HARDWARE_URL = "https://1b9793f8.ngrok.io";
 		private static String FROM_NUMBER = "+16262262433";
 		private static String TO_NUMBER = "+15106849508";
 		private static String EMERGENCY = "+15106314655";
@@ -25,23 +24,23 @@
 		static AfisEngine Afis = new AfisEngine();
 		public static void Main(string[] args)
 		{
-			String param = ACCOUNT_SID + " " + AUTH_TOKEN + " " + APP_ID + " " + STATUS_DIR + " " + HARDWARE_URL + " " + FROM_NUMBER + " " + TO_NUMBER + " " + EMERGENCY;
+			String param = ACCOUNT_SID + " " + AUTH_TOKEN + " " + APP_ID + " " + DIR + " " + HARDWARE_URL + " " + FROM_NUMBER + " " + TO_NUMBER + " " + EMERGENCY;
 
 			//Database Start
 			Fingerprint fp1 = new Fingerprint();
-			fp1.AsBitmap = new Bitmap(Bitmap.FromFile(DIR + "2L.bmp"));
+			fp1.AsBitmap = new Bitmap(Bitmap.FromFile(DATABASE_DIR + "2L.bmp"));
 			Person person1 = new Person();
 			person1.Fingerprints.Add(fp1);
 			Afis.Extract(person1);
 
 			Fingerprint fp2 = new Fingerprint();
-			fp2.AsBitmap = new Bitmap(Bitmap.FromFile(DIR + "3L.bmp"));
+			fp2.AsBitmap = new Bitmap(Bitmap.FromFile(DATABASE_DIR + "3L.bmp"));
 			Person person2 = new Person();
 			person2.Fingerprints.Add(fp2);
 			Afis.Extract(person2);
 
 			Fingerprint fp3 = new Fingerprint();
-			fp3.AsBitmap = new Bitmap(Bitmap.FromFile(DIR + "4L.bmp"));
+			fp3.AsBitmap = new Bitmap(Bitmap.FromFile(DATABASE_DIR + "4L.bmp"));
 			Person person3 = new Person();
 			person3.Fingerprints.Add(fp3);
 			Afis.Extract(person3);
@@ -86,19 +85,19 @@
 					p.StartInfo.FileName = "java";
 					if (match1)
 					{
-						p.StartInfo.Arguments = @" -jar " + JAVA_DIR + "TwilioTest.jar conf " + param;
+						p.StartInfo.Arguments = @" -jar " + DIR + "\\TwilioTest.jar conf " + param;
 						p.Start();
 						Console.WriteLine("911");
 					}
 					else if (match2)
 					{
-						p.StartInfo.Arguments = @" -jar " + JAVA_DIR + "TwilioTest.jar on " + param;
+						p.StartInfo.Arguments = @" -jar " + DIR + "\\TwilioTest.jar on " + param;
 						p.Start();
 						Console.WriteLine("IoT");
 					}
 					else if (match3)
 					{
-						p.StartInfo.Arguments = @" -jar " + JAVA_DIR + "TwilioTest.jar msg " + param;
+						p.StartInfo.Arguments = @" -jar " + DIR + "\\TwilioTest.jar msg " + param;
 						p.Start();
 						Console.WriteLine("912");
 					}
