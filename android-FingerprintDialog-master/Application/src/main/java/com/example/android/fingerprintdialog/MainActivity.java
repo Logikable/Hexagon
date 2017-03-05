@@ -211,11 +211,24 @@ public class MainActivity extends Activity {
             v.setVisibility(View.VISIBLE);
             //v.setText(Base64.encodeToString(encrypted, 0 /* flags */));
             findViewById(R.id.test_message).setVisibility(View.VISIBLE);
-
+            findViewById(R.id.confirmation_message_2).setVisibility(View.VISIBLE);
             ///TWILIO HERE
 
         }
     }
+
+    private void showConfirmation2(byte[] encrypted) {
+        if (encrypted != null) {
+            TextView v = (TextView) findViewById(R.id.encrypted_message);
+            v.setVisibility(View.VISIBLE);
+            //v.setText(Base64.encodeToString(encrypted, 0 /* flags */));
+            findViewById(R.id.test_message).setVisibility(View.VISIBLE);
+            findViewById(R.id.confirmation_message_2).setVisibility(View.VISIBLE);
+            ///TWILIO HERE
+
+        }
+    }
+
 
 
     /**
@@ -311,8 +324,8 @@ public class MainActivity extends Activity {
 
         @Override
         public void onClick(View view) {
-            findViewById(R.id.confirmation_message).setVisibility(View.GONE);
-            findViewById(R.id.encrypted_message).setVisibility(View.GONE);
+            //findViewById(R.id.confirmation_message).setVisibility(View.GONE);
+            //findViewById(R.id.encrypted_message).setVisibility(View.GONE);
 
             // Set up the crypto object for later. The object will be authenticated by use
             // of the fingerprint.
@@ -363,7 +376,7 @@ public class MainActivity extends Activity {
         public void onClick(View view) {
             ///findViewById(R.id.confirmation_message).setVisibility(View.GONE);
             ///findViewById(R.id.encrypted_message).setVisibility(View.GONE);
-            ///findViewById(R.id.confirmation_message_2).setVisibility(View.GONE);
+
 
             // Set up the crypto object for later. The object will be authenticated by use
             // of the fingerprint.
@@ -378,6 +391,7 @@ public class MainActivity extends Activity {
                         .getBoolean(getString(R.string.use_fingerprint_to_authenticate_key),
                                 true);
                 if (useFingerprintPreference) {
+
                     fragment.setStage(
                             FingerprintAuthenticationDialogFragment2.Stage.FINGERPRINT);
                 } else {

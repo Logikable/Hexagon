@@ -132,7 +132,7 @@
             android:paddingEnd="16dp"
             android:textAppearance="@android:style/TextAppearance.Material.Body2"
             android:textColor="#DDA1"
-            android:text="@string/purchase_done"
+            android:text="@string/purchase_done_2"
             android:visibility="gone"/>
 
         <TextView
