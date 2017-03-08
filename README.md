@@ -9,6 +9,9 @@
 * PHP 5+
 * JDK 1.8
 * Twilio console
+* Intel Edison
+* Grove LCD screen
+* Grove LED light
 
 #### Usage
 
@@ -21,7 +24,8 @@
   * ACCOUNT_SID, AUTH_TOKEN, and APP_ID can be found in the Twilio Console. APP_ID is found where the TwiML Apps are configured.
   * HARDWARE_URL is the url of the URL of the hardware that receives the IOT data.
   * FROM_NUMBER, TO_NUMBER, and EMERGENCY represent the Twilio number, user's number, and the emergency numbers respectively.
-6. Launch Synaptics Fingerprint Manager, and leave it running in the background.
-7. Run the StealthApp from Xamarin/your C# IDE.
-8. Using the Synaptics development kit, press a finger onto the sensor.
-9. Depending on the finger provided, the app will either call the emergency number, send the user a message, or activate the IoT device.
+6. Setup and flash an Intel Edison, and connect it to wifi through SSH. Copy the IOT folder to the root directory, enter IOT, and run "node StealthIO.js" in the terminal to obtain the HARDWARE_URL. 
+7. Launch Synaptics Fingerprint Manager, and leave it running in the background.
+8. Run the StealthApp from Xamarin/your C# IDE.
+9. Using the Synaptics development kit, press a finger onto the sensor.
+10. Depending on the finger provided, the app will either call the emergency number, send the user a message, or activate the IoT device.
