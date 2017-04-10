@@ -1,5 +1,9 @@
 ### README
 
+We sought to build a mobile app that can enable the user to discreetly and subtly execute specific, individual commands in potentially hostile situations using 1:N fingerprint recognition.
+
+By calibrating HEXAGON with the user's fingerprints, the application can be configured to activate a unique function for each fingerprint. For HackTech 2017, we mapped and demoed the following three sample functions: auto-calling 911, auto-texting an emergency contact with user coordinates, and locking an IoT door.
+
 #### Basic Requirements
 
 * Synaptics Fingerprint Sensor Development Kit
